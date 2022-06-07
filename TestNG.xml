@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="E-Banking">
+        <listeners>
+                <listener class-name="com.ebanking.utilities.Reporting"/>
+        </listeners>
+        <test name="Banking App test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.ebanking.testCases.TCLogin"/>
+                <!--<class name="com.ebanking.testCases.TC_LoginDDT"/>-->
+           <!-- <class name="com.ebanking.testCases.TC_AddCustomer"/> -->
+        </classes>
+        </test>
+</suite>
